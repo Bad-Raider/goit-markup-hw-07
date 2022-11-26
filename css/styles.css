@@ -14,7 +14,7 @@
   --primary-font-weight: 500;
   --secondary-font-weight: 700;
   --primary-font-size: 16px;
-} */
+}  */
 
 /* ===================================================
 ==============ЗАГАЛЬНІ НАЛАШТУВАННЯ ==================
@@ -22,16 +22,15 @@
 
 /* html {
   box-sizing: border-box;
-}
+} */
 
-body {
+/* body {
   color: var(--primary-color-text);
   background-color: var(--primary-background-page);
-  /* фон і текст */
   font-family: Roboto, sans-serif;
   font-size: 14px;
   letter-spacing: 0.03em;
-} */
+}  */
 
 /* =============================================
 ==== прибираю підкреслення у всіх посилань =====
@@ -39,7 +38,7 @@ body {
 
 /* a {
   text-decoration: none;
-} */
+}  */
 
 /* ============================================
 ======= прибираю маркерування списків =========
@@ -47,7 +46,7 @@ body {
 
 /* li {
   list-style-type: none;
-} */
+}  */
 
 /* ============================================
 ======== прибираю стандартні ліві падінки =====
@@ -87,7 +86,7 @@ body {
 ==== Риска підсвітка активної сторінки====
 ========================================== */
 
-.nav-link.nav-link.current::after {
+.nav-link.current::after {
   content: "";
   position: absolute;
   bottom: -1px;
@@ -663,7 +662,7 @@ input {
 ======== Секція "чим ми займаємось?" ===========
 =============================================*/
 
-.section-project__possition {
+.section-project__wraper {
   position: relative;
 }
 
@@ -713,22 +712,18 @@ input {
 ============ Секція з персоналом =============
 ==============================================*/
 
-.section-project__title,
+/* .section-project__title,
 .section-staff__title,
-.header-customer {
+.customer__title {
   margin-bottom: 50px;
+  margin-top: 0px;
 
   color: var(--secondary-color-text);
   font-weight: var(--secondary-font-weight);
   font-size: 36px;
   line-height: var(--primary-line-height);
   text-align: center;
-}
-
-.section-staff__title,
-.section-project__title {
-  margin-top: 0px;
-}
+} */
 
 .section-staff__list {
   display: flex;
@@ -825,9 +820,6 @@ input {
 ========== Секція "Постійні клієнти" ========
 ============================================= */
 
-.header-customer {
-  margin-top: 0px;
-}
 
 .list-customer {
   display: flex;
