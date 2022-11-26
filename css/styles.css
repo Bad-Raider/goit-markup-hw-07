@@ -7,7 +7,7 @@
   --secondary-background-page: #f5f4fa;
   --tertiary-background-page: #2f303a;
   --accent-color: #2196f3;
-  --secondary-accent-color:#188CE8;
+  --secondary-accent-color: #188ce8;
   --primary-color-logo: #afb1b8;
   --primary-line-height: 1.2;
   --secondary-line-height: 1.7;
@@ -87,7 +87,7 @@ ul {
 ==== Риска підсвітка активної сторінки====
 ========================================== */
 
-.nav-link.nav-link.current::after{
+.nav-link.nav-link.current::after {
   content: "";
   position: absolute;
   bottom: -1px;
@@ -99,8 +99,6 @@ ul {
   border-radius: 2px;
 }
 
-
-
 /* ====================================
 =============== Кнопки=================
 ======================================= */
@@ -110,16 +108,15 @@ ul {
   font-family: inherit;
 }
 
-
 /* ================================================
 ======= Остання дитина без правого марджана =======
 =================================================== */
 
 li.item:last-child,
 .hidden:last-child,
-.example-progect:last-child,
-.staff-items:last-child,
-.staff-items:last-child,
+.section-project__list:last-child,
+.section-staff__item,
+.section-staff__item,
 .button-link:last-child,
 .item-contact:last-child,
 .social-network > .element:last-child,
@@ -164,7 +161,6 @@ header {
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
-  /* outline: 2px solid red; */
 }
 
 div.nav,
@@ -209,8 +205,7 @@ nav {
   line-height: var(--primary-line-height);
   letter-spacing: 0.02em;
 
-  transition: color 250ms  cubic-bezier(0.4, 0, 0.2, 1);
-
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .link-page {
@@ -243,7 +238,7 @@ li.item {
   line-height: var(--primary-line-height);
   letter-spacing: 0.02em;
 
-  transition: color 250ms  cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .contact {
@@ -266,12 +261,11 @@ li.item {
   margin-right: 10px;
 }
 
-
 /*  ==========================================
 ===================== ГЕРОЙ ==================
 ============================================== */
 
-section.section-progect {
+section.section-project {
   padding-top: 0px;
 }
 
@@ -311,7 +305,7 @@ h1 {
 }
 
 /* ==========================================
-============ Замоавити послугу ==============
+============ Замовити послугу ==============
 ============================================= */
 
 .button-activ {
@@ -330,15 +324,13 @@ h1 {
   letter-spacing: 0.06em;
   border-radius: 4px;
   border-color: transparent;
-  transition: background-color 250ms  cubic-bezier(0.4, 0, 0.2, 1)
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-  
+
 .button-activ:hover,
 .button-activ:focus {
   background-color: var(--secondary-accent-color);
 }
-
-
 
 /* ==========================================
 =============== Модальне вікно ==============
@@ -356,7 +348,7 @@ h1 {
   background-color: rgba(0, 0, 0, 0.2);
 
   opacity: 1;
-  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1); 
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .backdrop.is-hidden {
@@ -366,8 +358,8 @@ h1 {
 
 .backdrop.is-hidden .modal {
   transform: translate(-50%, -50%) scale(0.1);
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1) ;
-
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal {
@@ -380,19 +372,19 @@ h1 {
   padding: 40px;
 
   background-color: var(--primary-background-page);
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
 
   transform: translate(-50%, -50%) scale(1);
-  transition: transform 250ms  cubic-bezier(0.4, 0, 0.2, 1);
-
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* ===================================================
 ======= Кновка "Закрити" модальне вікно===============
 ======================================================*/
 
- .button-close {
+.button-close {
   position: absolute;
   top: 8px;
   right: 8px;
@@ -423,7 +415,6 @@ h1 {
 =======================================*/
 
 .title-form {
-
   padding-bottom: 12px;
 
   text-align: center;
@@ -468,14 +459,13 @@ input {
   letter-spacing: 0.01em;
 }
 
-
 .icon-person-form,
 .icon-email-form,
 .icon-phone-form {
   position: absolute;
   bottom: 21px;
   left: 15px;
-  transition: fill 250ms  cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .input-name:focus + .icon-person-form,
@@ -485,15 +475,14 @@ input {
 .input-phone:hover + .icon-phone-form,
 .input-mail:hover + .icon-email-form {
   fill: var(--accent-color);
-  transition: fill 250ms  cubic-bezier(0.4, 0, 0.2, 1)
-
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .input-name,
 .input-phone,
 .input-mail {
   padding-left: 42px;
-  transition: border-color 250ms  cubic-bezier(0.4, 0, 0.2, 1);
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .input-name:hover,
@@ -501,7 +490,6 @@ input {
 .input-mail:hover {
   border-color: var(--accent-color);
 }
-
 
 .label-textarea {
   padding-bottom: 0px;
@@ -531,12 +519,10 @@ input {
 ======== Кастомний чекбокс =======
 ================================== */
 
-
 .label-checkbox {
   display: inline-flex;
   width: auto;
   padding-bottom: 0px;
-
 }
 
 .input-checkbox {
@@ -546,6 +532,7 @@ input {
 
   border: transparent;
   -webkit-appearance: none;
+  appearance: none;
   position: absolute;
   display: block;
 }
@@ -555,7 +542,7 @@ input {
   margin-left: 4px;
 
   color: var(--accent-color);
-  text-decoration:underline;
+  text-decoration: underline;
 }
 
 .icon-check {
@@ -566,7 +553,7 @@ input {
   fill: var(--primary-background-page);
 }
 
-.input-checkbox:checked + .icon-check{
+.input-checkbox:checked + .icon-check {
   fill: var(--accent-color);
   border: transparent;
 }
@@ -595,8 +582,7 @@ input {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-color: transparent;
   border-radius: 4px;
-  transition: background-color 250ms  cubic-bezier(0.4, 0, 0.2, 1)
-  
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .button-form:hover,
@@ -673,59 +659,53 @@ input {
   text-transform: uppercase;
 }
 
-
 /*============================================
 ======== Секція "чим ми займаємось?" ===========
 =============================================*/
 
-.possition {
+.section-project__possition {
   position: relative;
-  
 }
 
-.text-on-img {
-position: absolute;
-bottom: 0;
+.section-project__text {
+  position: absolute;
+  bottom: 0;
 
-display: flex;
-align-items: center;
-justify-content: space-around;
-width: 370px;
-height: 70px;
-margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 370px;
+  height: 70px;
+  margin: 0;
 
-font-weight: 700;
-font-size: 14px;
-letter-spacing: 0.03em;
-line-height: var(--primary-line-height);
-text-transform: uppercase;
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: 0.03em;
+  line-height: var(--primary-line-height);
+  text-transform: uppercase;
 
-background-color: rgba(47, 48, 58, 0.8);
-color: var(--tertiary-color-text);
+  background-color: rgba(47, 48, 58, 0.8);
+  color: var(--tertiary-color-text);
 }
 
 /* =======================================
 ========== Секція "команда" ==============
 ==========================================*/
 
-.section-title-progect {
-  margin-top: 0px;
-}
-
-.example {
+.section-project__list {
   display: flex;
   margin-top: 0px;
   margin-bottom: 0px;
   padding-left: 0px;
-  align-items: center;
+  /* align-items: center; */
 }
 
-.example-progect {
+.section-project__item {
   display: block;
   margin-right: 30px;
 }
 
-.example-foto {
+.section-project__img {
   display: block;
 }
 
@@ -733,8 +713,8 @@ color: var(--tertiary-color-text);
 ============ Секція з персоналом =============
 ==============================================*/
 
-.section-title-progect,
-.section-title-staff,
+.section-project__title,
+.section-staff__title,
 .header-customer {
   margin-bottom: 50px;
 
@@ -745,18 +725,19 @@ color: var(--tertiary-color-text);
   text-align: center;
 }
 
-.section-title-staff {
+.section-staff__title,
+.section-project__title {
   margin-top: 0px;
 }
 
-.staff {
+.section-staff__list {
   display: flex;
   padding-left: 0px;
   margin-top: 0px;
   margin-bottom: 0px;
 }
 
-.staff-items {
+.section-staff__item {
   display: block;
   margin-right: 30px;
 
@@ -815,12 +796,11 @@ color: var(--tertiary-color-text);
   width: inherit;
   height: inherit;
 
-
   color: currentColor;
   border-radius: 50%;
 
-  transition: color 250ms  cubic-bezier(0.4, 0, 0.2, 1),
-  background-color 250ms  cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .social-network-link:hover,
@@ -833,10 +813,7 @@ color: var(--tertiary-color-text);
   fill: currentColor;
 }
 
-.background-color-section {
-  margin-right: auto;
-  margin-left: auto;
-
+.section-staff--background-color {
   background-color: var(--secondary-background-page);
 }
 
@@ -872,9 +849,8 @@ color: var(--tertiary-color-text);
   border-radius: 4px;
   cursor: pointer;
 
-  transition: color 250ms  cubic-bezier(0.4, 0, 0.2, 1),
-  border-color 250ms  cubic-bezier(0.4, 0, 0.2, 1);
-
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .link-customer:hover,
@@ -955,8 +931,8 @@ address {
 
   color: rgba(255, 255, 255, 0.6);
   font-style: normal;
-  
-  transition: color 250ms  cubic-bezier(0.4, 0, 0.2, 1);
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-contact:last-child {
@@ -1027,7 +1003,7 @@ address {
 
   fill: var(--tertiary-color-text);
 
-  transition: background-color 250ms  cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* =============================================
@@ -1057,7 +1033,6 @@ address {
   padding: 15px 16px;
   margin-top: 20px;
 
-  
   font-size: 16px;
   line-height: 1.3;
 
@@ -1067,14 +1042,14 @@ address {
   border-radius: 4px;
 }
 
-.input-footer::placeholder{
+.input-footer::placeholder {
   font-size: 16px;
   line-height: 20px;
   letter-spacing: 1.3;
   color: rgba(255, 255, 255, 0.6);
 }
 
-.wraper-input-and-button-footer{
+.wraper-input-and-button-footer {
   display: flex;
   align-items: flex-end;
 }
@@ -1088,7 +1063,7 @@ address {
   justify-content: center;
   align-items: center;
   margin-left: 12px;
-  
+
   padding: 0px;
   width: 200px;
   height: 50px;
@@ -1098,23 +1073,22 @@ address {
   line-height: 2;
   letter-spacing: 0.06em;
   cursor: pointer;
-  
+
   color: var(--tertiary-color-text);
   background-color: var(--accent-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   border: transparent;
-  transition: background-color 250ms  cubic-bezier(0.4, 0, 0.2, 1)
-
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-  
+
 .footer-button:hover,
 .footer-button:focus {
   background-color: var(--secondary-accent-color);
 }
 
 .icon-send-footer {
-  margin-left: 10px ;
+  margin-left: 10px;
 }
 
 /* =============================================
@@ -1153,11 +1127,10 @@ address {
   letter-spacing: 0.03em;
   border-color: transparent;
   border-radius: 4px;
-  
-  transition: box-shadow 250ms  cubic-bezier(0.4, 0, 0.2, 1),
-  background-color 250ms  cubic-bezier(0.4, 0, 0.2, 1),
-  color 250ms  cubic-bezier(0.4, 0, 0.2, 1);
 
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .button-item:hover,
@@ -1187,7 +1160,6 @@ address {
 .thumb {
   position: relative;
   overflow: hidden;
-
 }
 
 /* ========================================================
@@ -1210,16 +1182,16 @@ address {
 
 .progect-subject-link {
   display: inherit;
-  
-  transition: box-shadow 250ms  cubic-bezier(0.4, 0, 0.2, 1);
+
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-  
+
 .progect-subject-link:hover,
 .progect-subject-link:focus {
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
-
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
-  
+
 /* ===========================================
 ============= Оверлей ефект ==================
 ============================================== */
@@ -1240,15 +1212,15 @@ address {
 
   background-color: rgba(33, 150, 243, 0.9);
   transform: translatey(100%);
-  transition: transform 250ms  cubic-bezier(0.4, 0, 0.2, 1), opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
   opacity: 0;
 }
 
- .progect-subject-link:hover .progect-subject-overlay,
- .progect-subject-link:focus .progect-subject-overlay {
+.progect-subject-link:hover .progect-subject-overlay,
+.progect-subject-link:focus .progect-subject-overlay {
   transform: translatex(0);
   opacity: 1;
-
 }
 
 .progect-subject-text {
@@ -1263,7 +1235,6 @@ address {
 }
 
 .features {
-
   padding-left: 24px;
   padding-right: 24px;
   padding-top: 20px;
@@ -1275,7 +1246,7 @@ address {
   border-bottom: 1px solid #eeeeee;
 }
 
-img {
+.img {
   display: block;
 }
 

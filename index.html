@@ -16,7 +16,7 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link rel="stylesheet" href="./сss/styles.css" />
+    <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <!-- Контент -->
   <body>
@@ -186,54 +186,59 @@
 
       <!-- чим ми займаємося (картинки) -->
 
-      <section class="section section-progect">
+      <section class="section section-project">
         <div class="container">
-          <h2 class="section-title-progect">Чим ми займаємося</h2>
-          <ul class="example">
-            <li class="example-progect">
-              <div class="possition">
+          <h2 class="section-project__title">
+            Чим ми займаємося
+          </h2>
+          <ul class="section-project__list">
+            <li class="section-project__item">
+              <div class="section-project__possition">
                 <img
-                  class="example-foto"
+                  class="section-project__img"
                   src="./images/other/computer.jpg"
                   alt="Комп'ютер"
                   width="370"
+                  height="294"
                 />
-                <p class="text-on-img">Десктопні додатки</p>
+                <p class="section-project__text">Десктопні додатки</p>
               </div>
             </li>
-            <li class="example-progect">
-              <div class="possition">
+            <li class="section-project__item">
+              <div class="section-project__possition">
                 <img
-                  class="example-foto"
+                  class="section-project__img"
                   src="./images/other/phone.jpg"
                   alt="Телефон"
                   width="370"
+                  height="294"                 
                 />
-                <p class="text-on-img">Мобільні додатки</p>
+                <p class="section-project__text">Мобільні додатки</p>
               </div>
             </li>
-            <div class="possition">
-              <li class="example-progect">
+            <li class="section-project__item">
+              <div class="section-project__possition">
                 <img
-                  class="example-foto"
+                  class="section-project__img"
                   src="./images/other/table.jpg"
                   alt="Планшетний комп'ютер"
                   width="370"
+                  height="294"
                 />
-                <p class="text-on-img">Дизайнерські рішення</p>
-              </li>
-            </div>
+                <p class="section-project__text">Дизайнерські рішення</p>
+              </div>
+            </li>
           </ul>
         </div>
       </section>
 
       <!-- команда працівників -->
 
-      <section class="section background-color-section">
+      <section class="section section-staff section-staff--background-color">
         <div class="container">
-          <h2 class="section-title-staff">Наша команда</h2>
-          <ul class="staff">
-            <li class="staff-items">
+          <h2 class="section-staff__title">Наша команда</h2>
+          <ul class="section-staff__list">
+            <li class="section-staff__item">
               <img
                 src="./images/staff/ihor.jpg"
                 alt="Ігор Дем'яненко"
@@ -303,7 +308,7 @@
                 </ul>
               </div>
             </li>
-            <li class="staff-items">
+            <li class="section-staff__item">
               <img
                 src="./images/staff/olha.jpg"
                 alt="Фото Ольга Рєпіна"
@@ -373,7 +378,7 @@
                 </ul>
               </div>
             </li>
-            <li class="staff-items">
+            <li class="section-staff__item">
               <img
                 src="./images/staff/mykola.jpg"
                 alt="Фото Микола Тарасов"
@@ -444,7 +449,7 @@
                 </ul>
               </div>
             </li>
-            <li class="staff-items">
+            <li class="section-staff__item">
               <img
                 src="./images/staff/mykhailo.jpg"
                 alt="Фото Михайло Єрмаков"
@@ -518,6 +523,7 @@
           </ul>
         </div>
       </section>
+      
       <section class="section customer">
         <div class="container">
           <h2 class="header-customer">Постійні клієнти</h2>
@@ -527,7 +533,8 @@
                 <svg class="logo-customer" width="106" height="60">
                   <use
                     href="./images/decoration-img/icons.svg#icon-ya-co"
-                  ></use></svg              ></a>
+                  ></use>
+                  </svg              ></a>
             </li>
             <li class="title-customer">
               <a href="" class="link-customer">
@@ -685,7 +692,7 @@
                   href="./images/decoration-img/icons.svg#icon-send-footer"
                 ></use>
               </svg>
-            </buttoon>
+            </button>
           </div>
         </form>
       </div>
