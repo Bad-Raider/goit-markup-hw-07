@@ -1,4 +1,4 @@
-:root {
+/* :root {
   --primary-color-text: #757575;
   --secondary-color-text: #212121;
   --tertiary-color-text: #ffffff;
@@ -14,13 +14,13 @@
   --primary-font-weight: 500;
   --secondary-font-weight: 700;
   --primary-font-size: 16px;
-}
+} */
 
 /* ===================================================
 ==============ЗАГАЛЬНІ НАЛАШТУВАННЯ ==================
 ====================================================== */
 
-html {
+/* html {
   box-sizing: border-box;
 }
 
@@ -31,37 +31,37 @@ body {
   font-family: Roboto, sans-serif;
   font-size: 14px;
   letter-spacing: 0.03em;
-}
+} */
 
 /* =============================================
 ==== прибираю підкреслення у всіх посилань =====
 ================================================ */
 
-a {
+/* a {
   text-decoration: none;
-}
+} */
 
 /* ============================================
 ======= прибираю маркерування списків =========
 =============================================== */
 
-li {
+/* li {
   list-style-type: none;
-}
+} */
 
 /* ============================================
 ======== прибираю стандартні ліві падінки =====
 =============================================== */
 
-ul {
+/* ul {
   padding-left: 0px;
-}
+} */
 
 /*=============================================
 =======  прибираю непотрібні заголовки ========
 =============================================== */
 
-.visually-hidden {
+/* .visually-hidden {
   position: absolute;
   white-space: nowrap;
   width: 1px;
@@ -72,7 +72,7 @@ ul {
   clip: rect(0 0 0 0);
   clip-path: inset(50%);
   margin: -1px;
-}
+} */
 
 /*========================================
 ========== підсвітка активної сторінки====
@@ -119,7 +119,7 @@ li.item:last-child,
 .section-staff__item,
 .button-link:last-child,
 .item-contact:last-child,
-.social-network > .element:last-child,
+.social-network > .social-network__item:last-child,
 .list-customer > .title-customer:last-child,
 .social-page:last-child {
   margin-right: 0px;
@@ -746,7 +746,7 @@ input {
     0px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
-.section-title-staff-name {
+.section-staff__subtitle {
   color: var(--secondary-color-text);
   font-weight: var(--primary-font-weight);
   font-size: var(--primary-font-size);
@@ -756,7 +756,7 @@ input {
   margin-bottom: 10px;
 }
 
-.staff-name {
+.section-staff__name {
   font-size: var(--primary-font-size);
   line-height: var(--primary-line-height);
   text-align: center;
@@ -764,7 +764,7 @@ input {
   margin-bottom: 16px;
 }
 
-.staff-border {
+.section-staff__wraper {
   padding-top: 30px;
   padding-bottom: 30px;
 
@@ -777,7 +777,7 @@ input {
   justify-content: center;
 }
 
-.social-network > .element {
+.social-network > .social-network__item {
   display: inline-flex;
   justify-content: center;
   align-items: center;
@@ -789,7 +789,7 @@ input {
   /* outline: 2px solid black; */
 }
 
-.social-network-link {
+.social-network__link {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -803,13 +803,17 @@ input {
     background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.social-network-link:hover,
-.social-network-link:focus {
+.social-network__link:hover,
+.social-network__link:focus {
   background-color: var(--accent-color);
   color: var(--tertiary-color-text);
 }
 
-.link-account {
+.social-network__link:focus {
+  outline: var(--accent-color) solid 2px;
+}
+
+.social-network__icon {
   fill: currentColor;
 }
 
