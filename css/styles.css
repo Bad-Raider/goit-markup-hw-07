@@ -1075,12 +1075,8 @@ header {
 ============= сторінка "Студія"=================
 ================================================ */
 
-.button-link {
-  display: block;
-  margin-right: 8px;
-}
-
-.button-list {
+/* 
+.filter {
   display: flex;
   padding-left: 0px;
   margin-top: 0px;
@@ -1091,11 +1087,16 @@ header {
   border-radius: 4px;
 }
 
+.filter__item {
+  display: block;
+  margin-right: 8px;
+} */
+
 /*==============================================
 ============ фільтр контента ===================
 ================================================ */
-
-.button-item {
+/* 
+.filter__btn {
   padding-top: 4px;
   padding-bottom: 4px;
   padding-left: 22px;
@@ -1113,70 +1114,70 @@ header {
     color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.button-item:hover,
-.button-item:focus {
+.filter__btn:hover,
+.filter__btn:focus {
   background-color: var(--accent-color);
   color: var(--secondary-background-page);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
-}
+} */
 
 /*========================================
 ============== Проєкти ===================
 ==========================================*/
 
-.progect-subject {
+/* .examples-project__list {
   display: flex;
   flex-wrap: wrap;
   padding-left: 0px;
   margin-top: 50px;
   margin-bottom: 0px;
-}
+} */
 
 /* ========================================================
 = Відносно цього селектора проходить позиціювання оверлея =
 ===========================================================*/
 
-.thumb {
+/* .examples-project__thumb {
   position: relative;
   overflow: hidden;
-}
+} */
 
 /* ========================================================
 =========== Посилання на приклади робіт ===================
 ===========================================================*/
-
-.content {
+/* 
+.examples-project__item {
   display: block;
   margin-right: 30px;
   margin-bottom: 30px;
 }
 
-.content:nth-child(3n) {
+.examples-project__item:nth-child(3n) {
   margin-right: 0px;
 }
 
-.content:nth-last-child(-n + 3) {
+.examples-project__item:nth-last-child(-n + 3) {
   margin-bottom: 0px;
 }
 
-.progect-subject-link {
+.examples-project__link {
   display: inherit;
 
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.progect-subject-link:hover,
-.progect-subject-link:focus {
+.examples-project__link:hover,
+.examples-project__link:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
-}
+} */
 
 /* ===========================================
 ============= Оверлей ефект ==================
 ============================================== */
 
-.progect-subject-overlay {
+/* .examples-project__overlay {
   position: absolute;
   top: 0;
   left: 0;
@@ -1195,15 +1196,16 @@ header {
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1),
     opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
   opacity: 0;
-}
+} */
 
-.progect-subject-link:hover .progect-subject-overlay,
-.progect-subject-link:focus .progect-subject-overlay {
+/* .examples-project__link:hover .examples-project__overlay,
+.examples-project__link:focus .examples-project__overlay {
   transform: translatex(0);
   opacity: 1;
-}
+} */
 
-.progect-subject-text {
+
+/* .examples-project__text {
   margin: 0;
   padding: 63px 24px;
 
@@ -1214,7 +1216,7 @@ header {
   color: var(--tertiary-color-text);
 }
 
-.features {
+.examples-project__wraper {
   padding-left: 24px;
   padding-right: 24px;
   padding-top: 20px;
@@ -1226,11 +1228,11 @@ header {
   border-bottom: 1px solid #eeeeee;
 }
 
-.img {
+.examples-project__img {
   display: block;
 }
 
-.progects-subtitle {
+.examples-project__subtitle {
   margin-top: 0px;
   margin-bottom: 0px;
 
@@ -1241,11 +1243,11 @@ header {
   letter-spacing: 0.06em;
 }
 
-.progects-text {
+.examples-project__desc {
   margin-top: 4px;
   margin-bottom: 0px;
 
   font-size: var(--primary-font-size);
   line-height: 1.9;
   color: var(--primary-color-text);
-}
+} */
