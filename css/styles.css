@@ -101,24 +101,24 @@
 /* ====================================
 =============== Кнопки=================
 ======================================= */
-.button-item,
+/* .button-item,
 .button-activ {
   cursor: pointer;
   font-family: inherit;
-}
+} */
 
 /* ================================================
 ======= Остання дитина без правого марджана =======
 =================================================== */
 
 .page-site__item:last-child,
-.hidden:last-child,
+.advantage__item:last-child,
 .section-project__list:last-child,
 .section-staff__item:last-child,
 .button-link:last-child,
-.item-contact:last-child,
+.contact__item:last-child,
 .social-network__item:last-child,
-.list-customer > .title-customer:last-child,
+.customer__item:last-child,
 .social-page:last-child {
   margin-right: 0px;
 }
@@ -127,19 +127,19 @@
 ======== Падінги всіх секцій =========
 ====================================== */
 
-.section {
+/* .section {
   padding-top: 94px;
   padding-bottom: 94px;
-}
+} */
 
 /* ===========================================
 ===== зміна кольорів при фокусі і ховері =====
 ==============================================*/
 
-.contact-link:hover,
-.contact-link:focus,
-.footer-contact:hover,
-.footer-contact:focus,
+.contact__link:hover,
+.contact__link:focus,
+.address__contact:hover,
+.address__contact:focus,
 .page-site__link:hover,
 .page-site__link:focus {
   color: var(--accent-color);
@@ -148,24 +148,24 @@
 /* =================================
 ============== ХЕДЕР ===============
 ==================================== */
-
+/* 
 header {
   border-bottom: 1px solid #ececec;
 }
-
-.container {
+ */
+/* .container {
   width: 1200px;
   margin-left: auto;
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
-}
+} */
 
-.container--flex,
+/* .container--flex,
 .nav {
   display: flex;
   align-items: center;
-}
+} */
 
 /* =========================================
 ================ НАВІГАЦІЯ =================
@@ -223,7 +223,7 @@ header {
 =============== Контакти ===============
 ========================================*/
 
-.contact-link {
+/* .contact__link {
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -237,37 +237,33 @@ header {
   letter-spacing: 0.02em;
 
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
+} */
 
-.contact {
+/* .contact {
   display: flex;
   margin-top: 0px;
   margin-bottom: 0px;
   margin-left: auto;
   padding-left: 0px;
-}
+} */
 
-.item-contact {
+/* .contact__item {
   display: inline-flex;
   align-items: center;
   margin-right: 50px;
-}
+} */
 
-.item-contact-element {
+/* .contact__icon {
   display: block;
   fill: currentColor;
   margin-right: 10px;
-}
+} */
 
 /*  ==========================================
 ===================== ГЕРОЙ ==================
 ============================================== */
 
-section.section-project {
-  padding-top: 0px;
-}
-
-.hero {
+/* .hero {
   max-width: 1600px;
   height: 600px;
   padding: 200px 0px 200px;
@@ -283,9 +279,9 @@ section.section-project {
       rgba(47, 48, 58, 0.4)
     ),
     url("../images/decoration-img/hero.jpg");
-}
+} */
 
-h1 {
+/* .hero__title {
   display: block;
   margin-top: 0px;
   margin-bottom: 0px;
@@ -300,13 +296,13 @@ h1 {
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-}
+} */
 
 /* ==========================================
 ============ Замовити послугу ==============
 ============================================= */
 
-.button-activ {
+/* .hero__button {
   display: inline-block;
   padding-top: 8px;
   padding-bottom: 8px;
@@ -325,16 +321,16 @@ h1 {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.button-activ:hover,
-.button-activ:focus {
+.hero__button:hover,
+.hero__button:focus {
   background-color: var(--secondary-accent-color);
-}
+} */
 
 /* ==========================================
 =============== Модальне вікно ==============
 ============================================= */
 
-.backdrop {
+/* .backdrop {
   position: fixed;
   top: 0;
   left: 0;
@@ -376,13 +372,13 @@ h1 {
 
   transform: translate(-50%, -50%) scale(1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
+} */
 
 /* ===================================================
 ======= Кновка "Закрити" модальне вікно===============
 ======================================================*/
 
-.button-close {
+/* .button-close {
   position: absolute;
   top: 8px;
   right: 8px;
@@ -406,101 +402,58 @@ h1 {
 .button-close:hover,
 .button-close:focus {
   fill: var(--accent-color);
-}
+} */
 
 /* ====================================
-==== Заголовок модального вікна =======
+==== Заголовок форми модального вікна =======
 =======================================*/
 
-.title-form {
+/* .form__title {
   padding-bottom: 12px;
+  margin: 0px;
 
   text-align: center;
   font-weight: var(--secondary-font-weight);
   font-size: 20px;
   letter-spacing: 0.03em;
   color: #212121;
-}
+} */
 
 /* ====================================
 ============== Блоки форми ============
 =======================================*/
 
-label {
+/* label {
   display: block;
   width: 448px;
   height: auto;
   padding-bottom: 10px;
 
   text-align: left;
-}
+}  */
 
-input {
-  height: 40px;
-  width: inherit;
-
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 4px;
-
-  border: 1px solid rgba(33, 33, 33, 0.2);
-  border-radius: 4px;
-}
-
-.label-name,
-.label-mail,
-.label-phone {
+/* .form__label {
   position: relative;
+  display: block;
+  width: 448px;
+  height: auto;
+  padding-bottom: 10px;
 
+  text-align: left;
   font-size: 12px;
   line-height: var(--primary-line-height);
   letter-spacing: 0.01em;
 }
 
-.icon-person-form,
-.icon-email-form,
-.icon-phone-form {
-  position: absolute;
-  bottom: 21px;
-  left: 15px;
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.input-name:focus + .icon-person-form,
-.input-phone:focus + .icon-phone-form,
-.input-mail:focus + .icon-email-form,
-.input-name:hover + .icon-person-form,
-.input-phone:hover + .icon-phone-form,
-.input-mail:hover + .icon-email-form {
-  fill: var(--accent-color);
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.input-name,
-.input-phone,
-.input-mail {
-  padding-left: 42px;
-  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.input-name:hover,
-.input-phone:hover,
-.input-mail:hover {
-  border-color: var(--accent-color);
-}
-
-.label-textarea {
+.form__label--margin-padding {
   padding-bottom: 0px;
   margin-bottom: 20px;
 
-  font-size: 12px;
-  line-height: var(--primary-line-height);
-  letter-spacing: 0.01em;
 }
 
-.textarea-coment-form {
+.form__textarea {
   display: block;
-  width: inherit;
+  width: 448px;
   height: 120px;
 
   margin-top: 4px;
@@ -511,19 +464,62 @@ input {
   border-radius: 4px;
 
   resize: none;
+} */
+
+/* input {
+  height: 40px;
+  width: inherit;
+
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 4px;
+
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+} */
+
+/* .form__icon {
+  position: absolute;
+  bottom: 21px;
+  left: 15px;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
+.form__intup:focus + .form__icon,
+.form__intup:hover + .form__icon {
+  fill: var(--accent-color);
+}
+
+.form__intup {
+  height: 40px;
+  width: inherit;
+
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 4px;
+  padding-left: 42px;
+
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.form__intup:hover {
+  border-color: var(--accent-color);
+} */
 
 /* ===============================
 ======== Кастомний чекбокс =======
 ================================== */
 
-.label-checkbox {
+/* .checkbox {
   display: inline-flex;
   width: auto;
   padding-bottom: 0px;
 }
 
-.input-checkbox {
+.checkbox__input {
   width: 295px;
   height: 20px;
   margin-top: 0px;
@@ -535,7 +531,7 @@ input {
   display: block;
 }
 
-.contract {
+.checkbox__link {
   display: block;
   margin-left: 4px;
 
@@ -543,7 +539,7 @@ input {
   text-decoration: underline;
 }
 
-.icon-check {
+.checkbox__icon {
   margin-right: 7px;
 
   border: 2px solid #212121;
@@ -551,15 +547,15 @@ input {
   fill: var(--primary-background-page);
 }
 
-.input-checkbox:checked + .icon-check {
+.checkbox__input:checked + .checkbox__icon {
   fill: var(--accent-color);
   border: transparent;
-}
+} */
 /* ==================================
 ====== Кнопка відправки форми =======
 ===================================== */
 
-.button-form {
+/* .form__button {
   display: block;
   width: 200px;
   height: 50px;
@@ -583,10 +579,11 @@ input {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.button-form:hover,
-.button-form:focus {
+.form__button:hover,
+.form__button:focus {
   background-color: var(--secondary-accent-color);
-}
+  outline: transparent;
+} */
 /* ============================================
 ==================== СЕКЦІЇ ===================
 =============================================== */
@@ -595,20 +592,21 @@ input {
 ===== "Перевіги компанії"========
 ================================= */
 
-.hidden {
-  display: block;
-  width: 270px;
-  margin-right: 30px;
-}
-
-.list-hidden {
+/* .advantage__list {
   display: flex;
   margin-top: 0px;
   margin-bottom: 0px;
   padding-left: 0px;
 }
 
-.hidden::before {
+.advantage__item {
+  display: block;
+  width: 270px;
+  margin-right: 30px;
+}
+
+
+.advantage__item::before {
   content: "";
   display: block;
   height: 120px;
@@ -619,34 +617,26 @@ input {
 
   background-position: center;
   background-repeat: no-repeat;
-}
+} */
 
 /* =========================================================
 ============= Зображення до сектції "наші переваги" ========
 ============================================================ */
 
-.icon-antena::before {
+/* .advantage__item--icon-antena::before {
   background-image: url(../images/decoration-img/icon-hidden/antenna.png);
 }
-.icon-clock::before {
+.advantage__item--icon-clock::before {
   background-image: url(../images/decoration-img/icon-hidden/clock.png);
 }
-.icon-diagram::before {
+.advantage__item--icon-diagram::before {
   background-image: url(../images/decoration-img/icon-hidden/diagram.png);
 }
-.icon-astronautz::before {
+.advantage__item--icon-astronautz::before {
   background-image: url(../images/decoration-img/icon-hidden/astronautz.png);
 }
 
-.info {
-  margin-bottom: 0px;
-  margin-top: 10px;
-
-  font-weight: 400;
-  line-height: var(--secondary-line-height);
-}
-
-.section-title {
+.advantage__subtitle {
   margin-top: 0px;
   margin-bottom: 0px;
 
@@ -657,9 +647,21 @@ input {
   text-transform: uppercase;
 }
 
+.advantage__text {
+  margin-bottom: 0px;
+  margin-top: 10px;
+
+  font-weight: 400;
+  line-height: var(--secondary-line-height);
+} */
+
 /*============================================
 ======== Секція "чим ми займаємось?" ===========
 =============================================*/
+
+/* .section-project {
+  padding-top: 0px;
+}
 
 .section-project__wraper {
   position: relative;
@@ -684,28 +686,19 @@ input {
 
   background-color: rgba(47, 48, 58, 0.8);
   color: var(--tertiary-color-text);
-}
+} */
 
-/* =======================================
-========== Секція "команда" ==============
-==========================================*/
-
-.section-project__list {
+/* .section-project__list {
   display: flex;
   margin-top: 0px;
   margin-bottom: 0px;
   padding-left: 0px;
-  /* align-items: center; */
 }
 
 .section-project__item {
   display: block;
   margin-right: 30px;
-}
-
-.section-project__img {
-  display: block;
-}
+} */
 
 /*============================================
 ============ Секція з персоналом =============
@@ -724,6 +717,11 @@ input {
   text-align: center;
 } */
 
+/* .section-staff--background-color {
+  background-color: var(--secondary-background-page);
+}
+
+
 .section-staff__list {
   display: flex;
   padding-left: 0px;
@@ -738,6 +736,14 @@ input {
   border-radius: 0px 0px 4px 4px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+.section-staff__wraper {
+  padding-top: 30px;
+  padding-bottom: 30px;
+
+  background-color: var(--primary-background-page);
+  border-radius: inherit;
 }
 
 .section-staff__subtitle {
@@ -756,17 +762,13 @@ input {
   text-align: center;
   margin-top: 0px;
   margin-bottom: 16px;
-}
+} */
 
-.section-staff__wraper {
-  padding-top: 30px;
-  padding-bottom: 30px;
+/* ========================================
+========= Соціальні мережі=================
+=========================================== */
 
-  background-color: var(--primary-background-page);
-  border-radius: inherit;
-}
-
-.social-network {
+/* .social-network {
   display: flex;
   justify-content: center;
 }
@@ -780,7 +782,6 @@ input {
   margin-right: 10px;
   border-radius: 50%;
   color: var(--primary-color-logo);
-  /* outline: 2px solid black; */
 }
 
 .social-network__link {
@@ -804,23 +805,18 @@ input {
 }
 
 .social-network__link:focus {
-  outline: var(--accent-color) solid 2px;
+  outline: transparent;
 }
 
 .social-network__icon {
   fill: currentColor;
-}
-
-.section-staff--background-color {
-  background-color: var(--secondary-background-page);
-}
+} */
 
 /*===========================================
 ========== Секція "Постійні клієнти" ========
 ============================================= */
 
-
-.list-customer {
+/* .customer__list {
   display: flex;
   justify-content: center;
   margin-top: 0px;
@@ -828,11 +824,11 @@ input {
   padding-left: 0px;
 }
 
-.list-customer > .title-customer {
+.customer__item {
   margin-right: 30px;
 }
 
-.link-customer {
+.customer__link {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -848,20 +844,23 @@ input {
     border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.link-customer:hover,
-.link-customer:focus {
+.customer__link:hover,
+.customer__link:focus {
   border-color: var(--accent-color);
   color: var(--accent-color);
+  outline: transparent;
 }
-.logo-customer {
+
+
+.customer__logo {
   fill: currentColor;
-}
+} */
 
 /* ==================================================
 ===================    ФУТЕР   ======================
 ===================================================== */
 
-footer {
+.footer {
   background-color: var(--tertiary-background-page);
   padding-top: 60px;
   padding-bottom: 60px;
@@ -870,7 +869,20 @@ footer {
 .footer-flex {
   display: flex;
   align-items: baseline;
+  justify-content: space-between;
 }
+
+.footer__title {
+  margin-bottom: 20px;
+  margin-top: 0px;
+
+  color: var(--primary-background-page);
+  font-weight: var(--secondary-font-weight);
+  font-size: 14px;
+  line-height: var(--primary-line-height);
+  text-transform: uppercase;
+}
+
 
 /* =============================
 ============= логотип ==========
@@ -893,17 +905,16 @@ footer {
   color: var(--accent-color);
 } */
 
-
-address {
+/* .address {
   margin-top: 20px;
   font-weight: 400;
   line-height: var(--secondary-line-height);
-}
+} */
 /*==========================================
 ================ адреса футера =============
 ============================================ */
 
-.address-post {
+/* .address__post {
   display: block;
   width: 231px;
   margin-bottom: 9px;
@@ -914,12 +925,12 @@ address {
 
 .address-post:last-child {
   padding-bottom: 0px;
-}
+} */
 /*==================================
 ========== контакти футера =========
 ==================================== */
 
-.footer-contact {
+/* .address__contact {
   display: block;
   padding-right: 0px;
   width: 231px;
@@ -931,76 +942,48 @@ address {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.footer-contact:last-child {
+.address__contact:last-child {
   margin-bottom: 0px;
 }
 
 .footer-social-network {
   margin-left: 70px;
-}
+} */
 
 /*==================================================
 ======= Заголовок до соціальних мереж футера========
 ==================================================== */
 
-.header-network {
-  margin-bottom: 20px;
-  margin-top: 0px;
-
-  color: var(--primary-background-page);
-  font-weight: var(--secondary-font-weight);
-  font-size: 14px;
-  line-height: var(--primary-line-height);
-  text-transform: uppercase;
-}
 /*==================================================
 =========== Список соціальних мереж футера==========
 ====================================================*/
 
-.footer-social-page {
+/* .social-network {
   display: flex;
   justify-content: center;
   padding-left: 0px;
   margin-top: 0px;
   margin-bottom: 0px;
-}
+} */
 
-.social-page {
-  margin-top: 0px;
-  margin-bottom: 0px;
-  padding-left: 0px;
-  padding-right: 0px;
-}
-
-.social-page {
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-  width: 44px;
-  height: 44px;
-  margin-right: 10px;
-  background-color: rgba(255, 255, 255, 0.1);
-
-  border-radius: 50%;
-}
-
-.social-page-link:hover,
-.social-page-link:focus {
+/* .social-network__link:hover,
+.social-network__link:focus {
   background-color: var(--accent-color);
-}
+} */
 
-.social-page-link {
+/* .social-network__link {
   display: flex;
   justify-content: center;
   align-items: center;
   width: inherit;
   height: inherit;
+
+  
   border-radius: 50%;
 
-  fill: var(--tertiary-color-text);
-
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
+} */
+
 
 /* =============================================
 ================ Форма футера ==================

@@ -20,5 +20,17 @@ html {
     
   ul {
     padding-left: 0px;
+    margin: 0px;
   }
 
+.button-item,
+  .button-activ {
+    cursor: pointer;
+    font-family: inherit;
+  }
+  
+  .section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+  
