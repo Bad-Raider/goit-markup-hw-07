@@ -65,4 +65,25 @@ ul {
   font-size: 36px;
   line-height: var(--primary-line-height);
   text-align: center;
+}
+
+.logo {
+  display: block;
+  color: var(--fourth-color-text);
+  font-family: Raleway, sans-serif;
+  font-weight: var(--secondary-font-weight);
+  font-size: 26px;
+  line-height: var(--primary-line-height);
+}
+.logo__span {
+  color: var(--accent-color);
+}
+
+.logo--padding {
+  padding-top: 24px;
+  padding-bottom: 25px;
+}
+
+.logo--color {
+  color: var(--tertiary-color-text);
 }/*# sourceMappingURL=main.css.map */
